@@ -26,3 +26,7 @@ th, td {
     margin: 5px 10px;
     padding: 6px;
 }
+
+.warning {
+    background-color:#da8a8a;
+}
