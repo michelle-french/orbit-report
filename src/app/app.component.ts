@@ -21,8 +21,8 @@ constructor() {
 
       let fetchedSatellites = data.satellites;
          for(let i=0; i<fetchedSatellites.length; i++){
-          new Satellite (fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
-          this.sourceList.push(fetchedSatellites[i]);
+          let satellite = new Satellite (fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
+          this.sourceList.push(satellite);
         }
         this.displayList = this.sourceList.slice(0);
       }.bind(this));
